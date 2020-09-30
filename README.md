@@ -1,2 +1,57 @@
-# BreastCancerClassification
-This this final project repository
+# Breast Cancer Classification Model & Risk Factor Analysis #
+
+## Project Overview ##
+
+Analyze Breast Cancer Risk Factor Dataset for the creation of a dashboard with graphical representation of features like age, race, familial breast cancer history, and others.
+
+Using Deep Neural Network we will create a breast cancer screening model for Invasive Ductal Carcinoma (IDC). The classifier will  predict image histology as benign or malignant. 
+
+## Why are we interested in this? ##
+
+Breast cancer is the most common cancer in women worldwide; it is estimated that 276,480 new cases of invasive breast cancer will be diagnosed in women in the US. Approximately 30% of all new diagnosis will be breast cancer.
+
+Other statistics reveal that 1 in 8 women will be diagnosed through their lifetime.
+
+According to the American Cancer Society, early detection of Breast Cancer, the 5-year relative survival rate is 99%. Mammograms is an x-ray that allows qualified specialists to examine breast tissue for any suspicious areas; by training computers with high sensitivity the cost of mammograms can decrease as it will advice you to go to the doctor if there is a suspicious of a malignant mass.
+
+## Data Source ##
+
+### Risk Factor Dataset ###
+
+Source:
+[Risk Factor Dataset](https://www.bcsc-research.org/data/rf/risk-factor-dataset-download)
+
+The data set contains 1,522,340 records, representing 6,788,436 mammograms. Collected between 2005- 2017, and selected one exam per women per calendar year and year of age.
+
+All features are encoded; documentation [link:] (https://www.bcsc-research.org/data/rf/documentation)
+
+### Breast Histopathology images ###
+
+Source:
+[Breast Histopathology Images](https://www.kaggle.com/paultimothymooney/breast-histopathology-images/)
+
+The original dataset was formed of 162 whole mount slides of Breast Cancer specimen, 277534 oatches of 50 x 50 images were extracted; 198,738 IDC negative and 78,786 IDC positive. The patients file name is in the format:
+    uxXyYclassC.png → 10253idx5
+X and Y are the coordinates where the patch were cropped from and C indicates class: 0 is non-IDC and 1 is IDC
+
+## Questions ##
+
+* Understanding risk factors distributions to promote early detection practices; breast self exam, clinical breast exam and mammogram 
+*Deep Neural Machine Learning Model to analyze mammograms and detect Breast Cancer
+
+### Task Distribution & Technology Use ###
+
+- Presentation - Ana (Google Slides & Readme.md)
+- Initial Data Processing - Girija & Tien (Python)
+- Database - Hannah & Mauricio (postgres)
+
+## Upcoming tasks ##
+-[ ] Design a dashboard layout to represent data and story tell
+-[ ] Initial machine learning model
+    - [ ] Asses sensitivity and optimize model to desired level of accuracy
+-[ ] Store clean and complete dataset in DB for future use in the analysis and storytelling 
+
+## Communication and More Information ##
+
+We are currently communicating through a Slack channel; and have created a Google Drive Folder to store presentation templetes and meeting minutes.
+[Link] (https://drive.google.com/drive/folders/1LaX9KnGGwv2Lf1l9v83TqIOjVzP_935L)
