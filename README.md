@@ -30,14 +30,16 @@ All features are encoded; documentation [link:] (https://www.bcsc-research.org/d
 Source:
 [Breast Histopathology Images](https://www.kaggle.com/paultimothymooney/breast-histopathology-images/)
 
-The original dataset was formed of 162 whole mount slides of Breast Cancer specimen, 277534 oatches of 50 x 50 images were extracted; 198,738 IDC negative and 78,786 IDC positive. The patients file name is in the format:
+The original dataset was formed of 162 whole mount slides of Breast Cancer specimen, 277534 patches of 50 x 50 images were extracted; 198,738 IDC negative and 78,786 IDC positive. The patients file name is in the format:
     uxXyYclassC.png → 10253idx5
 X and Y are the coordinates where the patch were cropped from and C indicates class: 0 is non-IDC and 1 is IDC
 
 ## Questions ##
 
 * Understanding risk factors distributions to promote early detection practices; breast self exam, clinical breast exam and mammogram 
-*Deep Neural Machine Learning Model to analyze mammograms and detect Breast Cancer
+* What are some of the most important risk factors to the development of breast cancer
+* Deep Neural Machine Learning Model to analyze mammograms and detect Breast Cancer
+* Can mammograms be analyzed by computers to send alert messages and request a visit with a specialist 
 
 ### Task Distribution & Technology Use ###
 
@@ -48,10 +50,10 @@ X and Y are the coordinates where the patch were cropped from and C indicates cl
 ## Upcoming tasks ##
 -[ ] Design a dashboard layout to represent data and story tell
 -[ ] Initial machine learning model
-    - [ ] Asses sensitivity and optimize model to desired level of accuracy
+    - [ ] Assess sensitivity and optimize model to desired level of accuracy
 -[ ] Store clean and complete dataset in DB for future use in the analysis and storytelling 
 
 ## Communication and More Information ##
 
-We are currently communicating through a Slack channel; and have created a Google Drive Folder to store presentation templetes and meeting minutes.
+We are currently communicating through a Slack channel (name: #finalproject); and have created a Google Drive Folder to store presentation templetes and meeting minutes.
 [Link] (https://drive.google.com/drive/folders/1LaX9KnGGwv2Lf1l9v83TqIOjVzP_935L)
