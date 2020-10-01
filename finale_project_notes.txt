@@ -1,0 +1,26 @@
+id          sub_id   target
+8863        0         772
+            1         207
+8864        0         805
+            1         328
+			
+			
+1) https://fuhsd-org.zoom.us/j/91826208073
+
+ACT - 12 Dec
+
+
+peredana3101@gmail.com
+meguez@ausd.net
+tien.lee@gmail.com
+hannahkyo.preston@gmail.com
+
+
+1. Can we add more questions in "Question" Section. Also bulletin mark up is different.
+
+2. Can we add Slack Channel Name?
+
+3. Upcoming tasks spelling mistake it should be Assess
+
+I am approving the request but make sure we make these changes
+
