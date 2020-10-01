@@ -8,9 +8,9 @@ Using Deep Neural Network we will create a breast cancer screening model for Inv
 
 ## Why are we interested in this? ##
 
-Breast cancer is the most common cancer in women worldwide; it is estimated that 276,480 new cases of invasive breast cancer will be diagnosed in women in the US. Approximately 30% of all new diagnosis will be breast cancer.
+Breast cancer is the most common cancer in women worldwide; it is estimated that 276,480 new cases of invasive breast cancer will be diagnosed in women in the US. Approximately 30% of all new cancer diagnosis will be breast cancer.
 
-Other statistics reveal that 1 in 8 women will be diagnosed through their lifetime.
+Other statistics reveal that 1 in 8 women will be diagnosed with breast cancer through their lifetime.
 
 According to the American Cancer Society, early detection of Breast Cancer, the 5-year relative survival rate is 99%. Mammograms is an x-ray that allows qualified specialists to examine breast tissue for any suspicious areas; by training computers with high sensitivity the cost of mammograms can decrease as it will advice you to go to the doctor if there is a suspicious of a malignant mass.
 
@@ -23,7 +23,7 @@ Source:
 
 The data set contains 1,522,340 records, representing 6,788,436 mammograms. Collected between 2005- 2017, and selected one exam per women per calendar year and year of age.
 
-All features are encoded; documentation [link:] (https://www.bcsc-research.org/data/rf/documentation)
+All features are encoded; [Data documentation](https://www.bcsc-research.org/data/rf/documentation)
 
 ### Breast Histopathology images ###
 
@@ -31,29 +31,31 @@ Source:
 [Breast Histopathology Images](https://www.kaggle.com/paultimothymooney/breast-histopathology-images/)
 
 The original dataset was formed of 162 whole mount slides of Breast Cancer specimen, 277534 patches of 50 x 50 images were extracted; 198,738 IDC negative and 78,786 IDC positive. The patients file name is in the format:
+
     uxXyYclassC.png → 10253idx5
+    
 X and Y are the coordinates where the patch were cropped from and C indicates class: 0 is non-IDC and 1 is IDC
 
-## Questions ##
+## Goals/ Questions ##
 
 * Understanding risk factors distributions to promote early detection practices; breast self exam, clinical breast exam and mammogram 
-* What are some of the most important risk factors to the development of breast cancer
 * Deep Neural Machine Learning Model to analyze mammograms and detect Breast Cancer
-* Can mammograms be analyzed by computers to send alert messages and request a visit with a specialist 
+* What are some of the most important risk factors to the development of breast cancer?
+* Can mammograms be analyzed by computers to send alert messages and request a visit with a specialist?
 
 ### Task Distribution & Technology Use ###
 
-- Presentation - Ana (Google Slides & Readme.md)
-- Initial Data Processing - Girija & Tien (Python)
-- Database - Hannah & Mauricio (postgres)
+* Presentation - Ana (Google Slides & Readme.md)
+* Initial Data Processing - Girija & Tien (Python)
+* Database - Hannah & Mauricio (postgres)
 
 ## Upcoming tasks ##
--[ ] Design a dashboard layout to represent data and story tell
--[ ] Initial machine learning model
+- [ ] Design a dashboard layout to represent data and story tell
+- [ ] Initial machine learning model
     - [ ] Assess sensitivity and optimize model to desired level of accuracy
--[ ] Store clean and complete dataset in DB for future use in the analysis and storytelling 
+- [ ] Store clean and complete dataset in DB for future use in the analysis and storytelling 
 
 ## Communication and More Information ##
 
 We are currently communicating through a Slack channel (name: #finalproject); and have created a Google Drive Folder to store presentation templetes and meeting minutes.
-[Link] (https://drive.google.com/drive/folders/1LaX9KnGGwv2Lf1l9v83TqIOjVzP_935L)
+[link](https://drive.google.com/drive/folders/1LaX9KnGGwv2Lf1l9v83TqIOjVzP_935L)
