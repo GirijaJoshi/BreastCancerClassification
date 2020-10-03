@@ -1,0 +1,11 @@
+CancerType,Year,Race,Sex,AgeAdjustedRate,CaseCount,Population
+'All Cancer Sites Combined','2017','White','Male','470.8','714508','125664614'
+'All Cancer Sites Combined','2017','Black','Male','497.1','93571','21980769'
+'All Cancer Sites Combined','2017','Asian/Pacific Islander','Male','285.4','25693','10130807'
+'All Cancer Sites Combined','2017','American Indian/Alaska Native','Male','273.3','4784','2349440'
+'All Cancer Sites Combined','2017','Hispanic','Male','350.4','64814','29650857'
+'All Cancer Sites Combined','2017','White','Female','418.3','694252','127878578'
+'All Cancer Sites Combined','2017','Black','Female','383.2','92483','23807887'
+'All Cancer Sites Combined','2017','Asian/Pacific Islander','Female','287.4','32868','10999800'
+'All Cancer Sites Combined','2017','American Indian/Alaska Native','Female','268.9','5400','2335226'
+'All Cancer Sites Combined','2017','Hispanic','Female','326.9','74374','29050132'
