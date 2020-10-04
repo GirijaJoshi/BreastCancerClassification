@@ -12,7 +12,7 @@ Breast cancer is the most common cancer in women worldwide; it is estimated that
 
 Other statistics reveal that 1 in 8 women will be diagnosed with breast cancer through their lifetime.
 
-According to the American Cancer Society, the 5-year relative survival rate is 99%. A Mammogram is an x-ray that allows qualified specialists to examine breast tissue for any suspicious areas. By training computers with high sensitivity, the cost of mammograms can decrease as the model will advice you to go to the doctor if there is suspicious of a malignant mass.
+According to the American Cancer Society, early detection (Stage 1) has a 5-year relative survival rate is 99%.  One of the ways to help early detection is by Mammogram, an x-ray that allows qualified specialists to examine breast tissue for any suspicious areas. By training computers with image interpretation machine learning, the effectiveness and rate of mammograms can increase as interpretation is aided by machine learning algorithm where its not humanly possible.  We hope this  project can contribute to the society in general.  
 
 ## Data Source ##
 
