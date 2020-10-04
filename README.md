@@ -12,7 +12,7 @@ Breast cancer is the most common cancer in women worldwide; it is estimated that
 
 Other statistics reveal that 1 in 8 women will be diagnosed with breast cancer through their lifetime.
 
-According to the American Cancer Society, early detection of Breast Cancer, the 5-year relative survival rate is 99%. Mammograms is an x-ray that allows qualified specialists to examine breast tissue for any suspicious areas; by training computers with high sensitivity the cost of mammograms can decrease as it will advice you to go to the doctor if there is a suspicious of a malignant mass.
+According to the American Cancer Society, the 5-year relative survival rate is 99%. A Mammogram is an x-ray that allows qualified specialists to examine breast tissue for any suspicious areas. By training computers with high sensitivity, the cost of mammograms can decrease as the model will advice you to go to the doctor if there is suspicious of a malignant mass.
 
 ## Data Source ##
 
