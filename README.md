@@ -21,30 +21,34 @@ According to the American Cancer Society, the 5-year relative survival rate is 9
 Source:
 [Risk Factor Dataset](https://www.bcsc-research.org/data/rf/risk-factor-dataset-download)
 
-The data set contains 1,522,340 records, representing 6,788,436 mammograms. Collected between 2005- 2017, and selected one exam per women per calendar year and year of age.
+The data set contains 1,522,340 records, representing information from 6,788,436 mammograms. Collected between 2005- 2017, and selected one exam per women per calendar year and year of age.
 
-All features are encoded; [Data documentation](https://www.bcsc-research.org/data/rf/documentation)
+All data features are encoded; [Data documentation](https://www.bcsc-research.org/data/rf/documentation)
+
+Citation: Data collection and sharing was supported by the National Cancer Institute (P01CA154292; U54CA163303), the Patient-Centered Outcomes Research Institute (PCS-1504-30370), and the Agency for Health Research and Quality (R01 HS018366-01A1). We thank the participating women, mammography facilities, and radiologists for the data they have provided for this study. You can learn more about the BCSC at: http://www.bcsc-research.org/.
 
 ### Breast Histopathology images ###
 
 Source:
 [Breast Histopathology Images](https://www.kaggle.com/paultimothymooney/breast-histopathology-images/)
 
-The original dataset was formed of 162 whole mount slides of Breast Cancer specimen, 277534 patches of 50 x 50 images were extracted; 198,738 IDC negative and 78,786 IDC positive. The patients file name is in the format:
+The original dataset was formed of 162 whole mount slides of Breast Cancer specimen, 277534 patches of 50 x 50 images were extracted; 198,738 IDC negative and 78,786 IDC positive. All files are images, with the file name in following format:
 
-    uxXyYclassC.png → 10253idx5
+    e.g. uxXyYclassC.png → 8975_idx5_x51_y1101_class0.png
     
-X and Y are the coordinates where the patch were cropped from and C indicates class: 0 is non-IDC and 1 is IDC
+starting with patient id (8975_idx5), then X and Y are the coordinates where the patch were cropped from, and C indicates class: 0 is non-IDC and 1 is IDC
 
-## Goals/ Questions ##
+## Goals / Questions ##
 
-* Understanding risk factors distributions to promote early detection practices; breast self exam, clinical breast exam and mammogram 
-* Deep Neural Machine Learning Model to analyze mammograms and detect Breast Cancer
+* Create an interactive dashboard to promote understanding of risk factors and its distributions.  
+* Promote breast cancer awareness, and early detection practices; traditional examination techinques and modern computer aided techniques.
+* Leverage Deep Neural Network (DNN/CNN) Machine Learning Models to aid analysis and detection of Breast Cancer via Mammogram image analysis.
 * What are some of the most important risk factors to the development of breast cancer?
-* Can mammograms be analyzed by computers to send alert messages and request a visit with a specialist?
+* Can mammograms be analyzed by computers to aid in breast cancer detection?
 
 ### Task Distribution & Technology Use ###
 
+Primary roles: 
 * Presentation - Ana (Google Slides & Readme.md)
 * Initial Data Processing - Girija & Tien (Python)
 * Database - Hannah & Mauricio (postgres)
