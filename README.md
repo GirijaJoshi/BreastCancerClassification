@@ -46,19 +46,47 @@ starting with patient id (8975_idx5), then X and Y are the coordinates where the
 * What are some of the most important risk factors to the development of breast cancer?
 * Can mammograms be analyzed by computers to aid in breast cancer detection?
 
+## Data Exploration##
+
+### Breat Histopathology Images ###
+
+Extracted X, Y Patient ID and target feature from image path to create initial dataset. Cancer Diagnosis (1) group was disproportionately small (1→  78, 716 ; 2 → 198,259); to fix this we performed data augmentation by rotating images Cancer Diagnosis 40 degrees. New data has 208,984 cancer diagnosis and 198,259 no cancer diagnosis. New datasets was too large to process in personal computers; so we decided to under sample for the machine learning model.
+
+### Risk Factor Analysis ###
+
+Original data sets were divided in three different CVS tables; we performed vertical concatenation to have one DF. There are 19,790,420 rows, 13 columns and no null values. Data has already been encoded, all data are integers, so there are no transformations needed.
+
+## Machine Learning Model ##
+
+### Model Selection: ###
+
+Using the Breast Histopathology Images create a classification model using a deep neural network to predict if tumor is benign or malign.
+
+The Deep Neural Network has three hidden layers with 32, 64 and 128 nodes respectively; totaling a number of 683,329 parameters. The initial accuracy score is 83%. All hidden layers are using relu activation functions and the output layer is using a sigmoid function.
+
+### Feature Selection: ###
+
+Using the Keras Preprocessing Image package; images are converted to arrays that contains information about position and color. The models trained to detect patterns that are cancerous and noncancerous based of these features.
+
+### Limitations: ###
+* Memory: To rin the model the server needs 10 GB of free memory 
+* Time: Model processing with under sampled data runs for 6 + hours on a personal computer
+
 ### Task Distribution & Technology Use ###
 
-Primary roles: 
-* Presentation - Ana (Google Slides & Readme.md)
-* Initial Data Processing - Girija & Tien (Python)
-* Database - Hannah & Mauricio (postgres)
+* Presentation - Ana (Readme.md) & all team members will participate in feature selection analysis and decision making process
+* Data Processing and Modeling- Girija
+* Database -  Mauricio
+* Dashboard- Tien & Ana (HTML), Hannah (Tableau)
 
 ## Upcoming tasks ##
-- [ ] Design a dashboard layout to represent data and story tell
-- [ ] Initial machine learning model
-    - [ ] Assess sensitivity and optimize model to desired level of accuracy
-- [ ] Store clean and complete dataset in DB for future use in the analysis and storytelling 
+- [ ] Assess sensitivity and optimize model to desired level of accuracy
+- [ ] Flask application for machine learning model
+- [ ] Static database and scraping interactions with existing code
+- [ ] Execute blueprints of dashboards in HTML and Tableau
 
+## Presentation Link ##
+[Link](https://docs.google.com/presentation/d/1gjYlYHoC6UKUpj6zE0XUGuknyy2YOyjtKmNX8WKn3Xw/edit?usp=sharing)
 ## Communication and More Information ##
 
 We are currently communicating through a Slack channel (name: #finalproject); and have created a Google Drive Folder to store presentation templetes and meeting minutes.
