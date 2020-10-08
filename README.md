@@ -36,7 +36,7 @@ The original dataset was formed of 162 whole mount slides of Breast Cancer speci
 
     e.g. uxXyYclassC.png → 8975_idx5_x51_y1101_class0.png
     
-starting with patient id (8975_idx5), then X and Y are the coordinates where the patch were cropped from, and C indicates class: 0 is non-IDC and 1 is IDC
+Starting with patient id (8975_idx5), then X and Y are the coordinates where the patch were cropped from, and C indicates class: 0 is non-IDC and 1 is IDC
 
 ## Goals / Questions ##
 
@@ -46,11 +46,11 @@ starting with patient id (8975_idx5), then X and Y are the coordinates where the
 * What are some of the most important risk factors to the development of breast cancer?
 * Can mammograms be analyzed by computers to aid in breast cancer detection?
 
-## Data Exploration##
+## Data Exploration ##
 
 ### Breat Histopathology Images ###
 
-Extracted X, Y Patient ID and target feature from image path to create initial dataset. Cancer Diagnosis (1) group was disproportionately small (1→  78, 716 ; 2 → 198,259); to fix this we performed data augmentation by rotating images Cancer Diagnosis 40 degrees. New data has 208,984 cancer diagnosis and 198,259 no cancer diagnosis. New datasets was too large to process in personal computers; so we decided to under sample for the machine learning model.
+Extracted X, Y Patient ID and target feature from image path to create initial dataset. Cancer Diagnosis (1) group was disproportionately small (1→  78, 716 ; 2 → 198,259); to fix this we performed data augmentation by rotating images Cancer Diagnosis 40 degrees. New data has 208,984 cancer diagnosis and 198,259 no cancer diagnosis.
 
 ### Risk Factor Analysis ###
 
@@ -60,17 +60,35 @@ Original data sets were divided in three different CVS tables; we performed vert
 
 ### Model Selection: ###
 
-Using the Breast Histopathology Images create a classification model using a deep neural network to predict if tumor is benign or malign.
+Using the Breast Histopathology Images create a classification model using a Deep Neural Network to predict if tumor is benign or malign. A Convolutional Neural Netwoek, is the most effective tool found fo the task of image recognition; the model can efficiently process, correlate and unsderstan the large amount of data in high-resolution images.
 
-The Deep Neural Network has three hidden layers with 32, 64 and 128 nodes respectively; totaling a number of 683,329 parameters. The initial accuracy score is 83%. All hidden layers are using relu activation functions and the output layer is using a sigmoid function.
+## Our Model ## 
+
+After image augmentation data set had too many images and could not be processed; the group decided to undersample. Used 109,404 images for training and 27,352 images for testing with similar numbers of cancerous and non-cancerous images.
+
+To increase accuray; model arquitecture is designed in a bottle neck; the Concolutional Neural Network will stablish a predictive model that classify the features of the image and can improve accuracy scores and F-scores.
+The Deep Neural Network has three hidden layers with 32, 64 and 128 nodes respectively; totaling a number of 683,329 parameters. The initial precision score is 86% and accuracy (F-Score) 83%. All hidden layers are using relu activation functions and the output layer is using a sigmoid function.
 
 ### Feature Selection: ###
 
 Using the Keras Preprocessing Image package; images are converted to arrays that contains information about position and color. The models trained to detect patterns that are cancerous and noncancerous based of these features.
 
+* Image Size: Used original image size 50 x 50 pixels. The data was clean and with consistent format.
+
+* Image Type: Mammograms png are used to train the model in the 50 x 50 format. Same image format is needed to make predictions 
+
+* Number of images: 136,756 images; there was an initial imbalance between cancerous and noncancerous images. We maximize the number of images by undersampling the non cancerous group to match number of images of the cancerous group.
+
+* Color: 3 color channels RGB (Red, Blue, Green).
+
 ### Limitations: ###
 * Memory: To rin the model the server needs 10 GB of free memory 
 * Time: Model processing with under sampled data runs for 6 + hours on a personal computer
+
+## Dashboard Blueprint## 
+
+The team will create a story board using Tableu to create a narrative on Breast Cancer Risk factorr and demographics. User can interact by clicking and to check which are the features that they want to observe and the division between cancerous and noncancerous. In the Tableus dashboard we will enbed an HTML file to run the ML model and do predictions of mammograms in real time. 
+
 
 ### Task Distribution & Technology Use ###
 
