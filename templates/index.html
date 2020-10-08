@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Classification</title>
+    <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <style>
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        tr > * + * {
+            padding-left: 10em;
+        }
+    </style>
+    
+</head>
+<body>
+    <center><h2>Images</h2></center>
+    <div class="row" id="imgs">
+        <form action="/action_page.php">
+            <table class="center">
+                <tr>
+                    <th>Image 1</th>
+                    <th>Image 2</th>
+                    <th>Image 3</th>
+                    <th>Image 4</th>
+                    <th>Image 5</th>
+                </tr>
+                
+                <tr>
+                    <td><img src="{{url_for('download_file', filename='8863_idx5_x351_y601_class0.png') }}" alt="Image1"></td>
+                    <td><img src="{{url_for('download_file', filename='10254_idx5_x1651_y1001_class1.png') }}" alt="Image2"></td>
+                    <td><img src="{{url_for('download_file', filename='16570_idx5_x1451_y951_class1.png') }}" alt="Image3"></td>
+                    <td><img src="{{url_for('download_file', filename='8955_idx5_x51_y301_class0.png') }}" alt="Image4"></td>
+                    <td><img src="{{url_for('download_file', filename='10279_idx5_x301_y851_class1.png') }}" alt="Image5"></td>
+                </tr>
+    
+                <tr>
+                    <td><a class="btn" href="/predict/8863_idx5_x351_y601_class0.png"
+                        role="button">Predict Image 1</a></td>
+                    <td><a class="btn" href="/predict/10254_idx5_x1651_y1001_class1.png"
+                        role="button">Predict Image 2</a></td>
+                    <td><a class="btn" href="/predict/16570_idx5_x1451_y951_class1.png"
+                        role="button">Predict Image 3</a></td>
+                    <td><a class="btn" href="/predict/8955_idx5_x51_y301_class0.png"
+                        role="button">Predict Image 4</a></td>
+                    <td><a class="btn" href="/predict/10279_idx5_x301_y851_class1.png"
+                        role="button">Predict Image 5</a></td>
+                </tr>
+            -
+            </table>
+    </div>
+</body>
+</html>
