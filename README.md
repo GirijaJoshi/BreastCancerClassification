@@ -85,7 +85,7 @@ Using the Keras Preprocessing Image package; images are converted to arrays that
 * Memory: To rin the model the server needs 10 GB of free memory 
 * Time: Model processing with under sampled data runs for 6 + hours on a personal computer
 
-## Dashboard Blueprint## 
+## Dashboard Blueprint ## 
 
 The team will create a story board using Tableu to create a narrative on Breast Cancer Risk factorr and demographics. User can interact by clicking and to check which are the features that they want to observe and the division between cancerous and noncancerous. In the Tableus dashboard we will enbed an HTML file to run the ML model and do predictions of mammograms in real time. 
 
