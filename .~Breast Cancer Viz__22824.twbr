@@ -1,0 +1,1540 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0721.1350                               -->
+<workbook source-build='2020.2.4 (20202.20.0721.1350)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='bcsc_risk_factors_summarized3_092020' inline='true' name='federated.0pl7vw00mxhhkc12pp68q0zabe41' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='bcsc_risk_factors_summarized3_092020' name='textscan.1fx9cwj007fbp21e65hca003l40t'>
+            <connection class='textscan' directory='/Users/harrisonpreston/Google_Drive/Data_Analytics_Bootcamp/Module_20/BreastCancerClassification/resources' filename='bcsc_risk_factors_summarized3_092020.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='data' name='textscan.0afkgx51f2iqe0110rltl12awx9c'>
+            <connection class='textscan' directory='/Users/harrisonpreston/Google_Drive/Data_Analytics_Bootcamp/Module_20/BreastCancerClassification/resources' filename='data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1fx9cwj007fbp21e65hca003l40t' name='bcsc_risk_factors_summarized3_092020.csv' table='[bcsc_risk_factors_summarized3_092020#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='calendar_year' ordinal='0' />
+            <column datatype='integer' name='age_group' ordinal='1' />
+            <column datatype='integer' name='race' ordinal='2' />
+            <column datatype='integer' name='family_history' ordinal='3' />
+            <column datatype='integer' name='age_menarche' ordinal='4' />
+            <column datatype='integer' name='age_first_birth' ordinal='5' />
+            <column datatype='integer' name='BIRADS_breast_density' ordinal='6' />
+            <column datatype='integer' name='current_hrt' ordinal='7' />
+            <column datatype='integer' name='menopaus' ordinal='8' />
+            <column datatype='integer' name='bmi_group' ordinal='9' />
+            <column datatype='integer' name='biophx' ordinal='10' />
+            <column datatype='integer' name='breast_cancer_history' ordinal='11' />
+            <column datatype='integer' name='covariate_count' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1fx9cwj007fbp21e65hca003l40t' name='bcsc_risk_factors_summarized3_092020.csv' table='[bcsc_risk_factors_summarized3_092020#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='calendar_year' ordinal='0' />
+            <column datatype='integer' name='age_group' ordinal='1' />
+            <column datatype='integer' name='race' ordinal='2' />
+            <column datatype='integer' name='family_history' ordinal='3' />
+            <column datatype='integer' name='age_menarche' ordinal='4' />
+            <column datatype='integer' name='age_first_birth' ordinal='5' />
+            <column datatype='integer' name='BIRADS_breast_density' ordinal='6' />
+            <column datatype='integer' name='current_hrt' ordinal='7' />
+            <column datatype='integer' name='menopaus' ordinal='8' />
+            <column datatype='integer' name='bmi_group' ordinal='9' />
+            <column datatype='integer' name='biophx' ordinal='10' />
+            <column datatype='integer' name='breast_cancer_history' ordinal='11' />
+            <column datatype='integer' name='covariate_count' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[bcsc_risk_factors_summarized3_092020.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calendar_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calendar_year]</local-name>
+            <parent-name>[bcsc_risk_factors_summarized3_092020.csv]</parent-name>
+            <remote-alias>calendar_year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_group</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age_group]</local-name>
+            <parent-name>[bcsc_risk_factors_summarized3_092020.csv]</parent-name>
+            <remote-alias>age_group</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>race</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[race]</local-name>
+            <parent-name>[bcsc_risk_factors_summarized3_092020.csv]</parent-name>
+            <remote-alias>race</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>family_history</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[family_history]</local-name>
+            <parent-name>[bcsc_risk_factors_summarized3_092020.csv]</parent-name>
+            <remote-alias>family_history</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_menarche</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age_menarche]</local-name>
+            <parent-name>[bcsc_risk_factors_summarized3_092020.csv]</parent-name>
+            <remote-alias>age_menarche</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_first_birth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[age_first_birth]</local-name>
+            <parent-name>[bcsc_risk_factors_summarized3_092020.csv]</parent-name>
+            <remote-alias>age_first_birth</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BIRADS_breast_density</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BIRADS_breast_density]</local-name>
+            <parent-name>[bcsc_risk_factors_summarized3_092020.csv]</parent-name>
+            <remote-alias>BIRADS_breast_density</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>current_hrt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[current_hrt]</local-name>
+            <parent-name>[bcsc_risk_factors_summarized3_092020.csv]</parent-name>
+            <remote-alias>current_hrt</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>menopaus</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[menopaus]</local-name>
+            <parent-name>[bcsc_risk_factors_summarized3_092020.csv]</parent-name>
+            <remote-alias>menopaus</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bmi_group</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[bmi_group]</local-name>
+            <parent-name>[bcsc_risk_factors_summarized3_092020.csv]</parent-name>
+            <remote-alias>bmi_group</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>biophx</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[biophx]</local-name>
+            <parent-name>[bcsc_risk_factors_summarized3_092020.csv]</parent-name>
+            <remote-alias>biophx</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>breast_cancer_history</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[breast_cancer_history]</local-name>
+            <parent-name>[bcsc_risk_factors_summarized3_092020.csv]</parent-name>
+            <remote-alias>breast_cancer_history</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>covariate_count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[covariate_count]</local-name>
+            <parent-name>[bcsc_risk_factors_summarized3_092020.csv]</parent-name>
+            <remote-alias>covariate_count</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='BIRADS breast density' datatype='integer' name='[BIRADS_breast_density]' role='measure' type='quantitative' />
+      <column caption='Concavity Mean (bin)' datatype='integer' name='[Concavity Mean (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='-2' formula='[concavity_mean]' peg='0' size='0.01' />
+      </column>
+      <column caption='Texture Mean (bin)' datatype='integer' name='[Texture Mean (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[texture_mean]' peg='0' size='2' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='bcsc_risk_factors_summarized3_092020.csv' datatype='table' name='[__tableau_internal_object_id__].[bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='bcsc_risk_factors_summarized3_092020.csv1' datatype='table' name='[__tableau_internal_object_id__].[bcsc_risk_factors_summarized3_092020.csv_8AD3BFFC7547411DAED1AAAD03B85364]' role='measure' type='quantitative' />
+      <column caption='Age First Birth' datatype='integer' name='[age_first_birth]' role='measure' type='quantitative' />
+      <column aggregation='Sum' caption='Age Group' datatype='integer' name='[age_group]' role='dimension' type='ordinal' />
+      <column caption='Age Menarche' datatype='integer' name='[age_menarche]' role='measure' type='quantitative' />
+      <column caption='Area Mean' datatype='real' name='[area_mean]' role='measure' type='quantitative' />
+      <column caption='Area Se' datatype='real' name='[area_se]' role='measure' type='quantitative' />
+      <column caption='Biophx' datatype='integer' name='[biophx]' role='measure' type='quantitative' />
+      <column caption='Bmi Group' datatype='integer' name='[bmi_group]' role='measure' type='quantitative' />
+      <column caption='Breast Cancer History' datatype='integer' name='[breast_cancer_history]' role='measure' type='quantitative' />
+      <column caption='Calendar Year' datatype='integer' name='[calendar_year]' role='dimension' type='quantitative' />
+      <column caption='Compactness Mean' datatype='real' name='[compactness_mean]' role='measure' type='quantitative' />
+      <column caption='Compactness Se' datatype='real' name='[compactness_se]' role='measure' type='quantitative' />
+      <column caption='Concavity Mean' datatype='real' name='[concavity_mean]' role='measure' type='quantitative' />
+      <column caption='Covariate Count' datatype='integer' name='[covariate_count]' role='measure' type='quantitative' />
+      <column caption='Current Hrt' datatype='integer' name='[current_hrt]' role='measure' type='quantitative' />
+      <column caption='Diagnosis' datatype='string' name='[diagnosis]' role='dimension' type='nominal' />
+      <column caption='Family History' datatype='integer' name='[family_history]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Menopaus' datatype='integer' name='[menopaus]' role='measure' type='quantitative' />
+      <column caption='Race' datatype='integer' name='[race]' role='measure' type='quantitative' />
+      <column caption='Texture Mean' datatype='real' name='[texture_mean]' role='measure' type='quantitative' />
+      <column-instance column='[covariate_count]' derivation='Attribute' name='[attr:covariate_count:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[breast_cancer_history]' derivation='Avg' name='[avg:breast_cancer_history:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[covariate_count]' derivation='Avg' name='[avg:covariate_count:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[family_history]' derivation='Avg' name='[avg:family_history:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[breast_cancer_history]' derivation='Count' name='[cnt:breast_cancer_history:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[covariate_count]' derivation='Count' name='[cnt:covariate_count:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[family_history]' derivation='Count' name='[cnt:family_history:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[family_history]' derivation='CountD' name='[ctd:family_history:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[breast_cancer_history]' derivation='None' name='[none:breast_cancer_history:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[covariate_count]' derivation='None' name='[none:covariate_count:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[diagnosis]' derivation='None' name='[none:diagnosis:nk]' pivot='key' type='nominal' />
+      <column-instance column='[family_history]' derivation='None' name='[none:family_history:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[breast_cancer_history]' derivation='Sum' name='[sum:breast_cancer_history:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[covariate_count]' derivation='Sum' name='[sum:covariate_count:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[family_history]' derivation='Sum' name='[sum:family_history:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[texture_mean]' derivation='Sum' name='[sum:texture_mean:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[attr:id:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:breast_cancer_history:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:id:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[cnt:breast_cancer_history:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[cnt:id:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[ctd:id:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:breast_cancer_history:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:id:ok]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[sum:breast_cancer_history:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[attr:covariate_count:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:covariate_count:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[cnt:covariate_count:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:covariate_count:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[sum:covariate_count:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:family_history:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[cnt:family_history:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[ctd:family_history:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:family_history:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[sum:family_history:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[sum:texture_mean:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='bcsc_risk_factors_summarized3_092020.csv' id='bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3'>
+            <properties context=''>
+              <relation connection='textscan.1fx9cwj007fbp21e65hca003l40t' name='bcsc_risk_factors_summarized3_092020.csv' table='[bcsc_risk_factors_summarized3_092020#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='calendar_year' ordinal='0' />
+                  <column datatype='integer' name='age_group' ordinal='1' />
+                  <column datatype='integer' name='race' ordinal='2' />
+                  <column datatype='integer' name='family_history' ordinal='3' />
+                  <column datatype='integer' name='age_menarche' ordinal='4' />
+                  <column datatype='integer' name='age_first_birth' ordinal='5' />
+                  <column datatype='integer' name='BIRADS_breast_density' ordinal='6' />
+                  <column datatype='integer' name='current_hrt' ordinal='7' />
+                  <column datatype='integer' name='menopaus' ordinal='8' />
+                  <column datatype='integer' name='bmi_group' ordinal='9' />
+                  <column datatype='integer' name='biophx' ordinal='10' />
+                  <column datatype='integer' name='breast_cancer_history' ordinal='11' />
+                  <column datatype='integer' name='covariate_count' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Age Group Averages'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Average by Age Group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bcsc_risk_factors_summarized3_092020' name='federated.0pl7vw00mxhhkc12pp68q0zabe41' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pl7vw00mxhhkc12pp68q0zabe41'>
+            <column aggregation='Sum' caption='Age Group' datatype='integer' name='[age_group]' role='dimension' type='ordinal' />
+            <column-instance column='[bmi_group]' derivation='Avg' name='[avg:bmi_group:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[breast_cancer_history]' derivation='Avg' name='[avg:breast_cancer_history:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[family_history]' derivation='Avg' name='[avg:family_history:qk]' pivot='key' type='quantitative' />
+            <column caption='Bmi Group' datatype='integer' name='[bmi_group]' role='measure' type='quantitative' />
+            <column caption='Breast Cancer History' datatype='integer' name='[breast_cancer_history]' role='measure' type='quantitative' />
+            <column caption='Covariate Count' datatype='integer' name='[covariate_count]' role='measure' type='quantitative' />
+            <column caption='Family History' datatype='integer' name='[family_history]' role='measure' type='quantitative' />
+            <column-instance column='[age_group]' derivation='None' name='[none:age_group:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[covariate_count]' derivation='Sum' name='[sum:covariate_count:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.0pl7vw00mxhhkc12pp68q0zabe41].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='11' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='linear' />
+                <format attr='mark-color' value='#fabfd2' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='12' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:family_history:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='linear' />
+                <format attr='mark-color' value='#fabfd2' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='13' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:breast_cancer_history:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='linear' />
+                <format attr='mark-color' value='#fabfd2' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='14' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[sum:covariate_count:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='linear' />
+                <format attr='mark-color' value='#fabfd2' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='15' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:bmi_group:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='line-interpolation' value='linear' />
+                <format attr='mark-color' value='#fabfd2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:family_history:qk] + ([federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:breast_cancer_history:qk] + ([federated.0pl7vw00mxhhkc12pp68q0zabe41].[sum:covariate_count:qk] + [federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:bmi_group:qk])))</rows>
+        <cols>[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:age_group:ok]</cols>
+      </table>
+      <simple-id uuid='{13307CEF-5F3E-48AB-A3C9-4193E607F35D}' />
+    </worksheet>
+    <worksheet name='Age Group Counts'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Number of Records per Age Group</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bcsc_risk_factors_summarized3_092020' name='federated.0pl7vw00mxhhkc12pp68q0zabe41' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pl7vw00mxhhkc12pp68q0zabe41'>
+            <_.fcp.ObjectModelTableType.true...column caption='bcsc_risk_factors_summarized3_092020.csv' datatype='table' name='[__tableau_internal_object_id__].[bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Sum' caption='Age Group' datatype='integer' name='[age_group]' role='dimension' type='ordinal' />
+            <column-instance column='[age_group]' derivation='None' name='[none:age_group:ok]' pivot='key' type='ordinal' />
+            <_.fcp.ObjectModelTableType.false...column caption='bcsc_risk_factors_summarized3_092020.csv' datatype='integer' name='[__tableau_internal_object_id__].[bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#fabfd2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0pl7vw00mxhhkc12pp68q0zabe41].[__tableau_internal_object_id__].[cnt:bcsc_risk_factors_summarized3_092020.csv_26E41766A03543E48393BE8EAEAE04C3:qk]</rows>
+        <cols>[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:age_group:ok]</cols>
+      </table>
+      <simple-id uuid='{AAB7F0A5-DF99-4940-83B7-DCF77E0B16AD}' />
+    </worksheet>
+    <worksheet name='Average Columns'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Average by Variable</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bcsc_risk_factors_summarized3_092020' name='federated.0pl7vw00mxhhkc12pp68q0zabe41' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pl7vw00mxhhkc12pp68q0zabe41'>
+            <column caption='BIRADS breast density' datatype='integer' name='[BIRADS_breast_density]' role='measure' type='quantitative' />
+            <column caption='Age First Birth' datatype='integer' name='[age_first_birth]' role='measure' type='quantitative' />
+            <column aggregation='Sum' caption='Age Group' datatype='integer' name='[age_group]' role='dimension' type='ordinal' />
+            <column caption='Age Menarche' datatype='integer' name='[age_menarche]' role='measure' type='quantitative' />
+            <column-instance column='[BIRADS_breast_density]' derivation='Avg' name='[avg:BIRADS_breast_density:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[age_first_birth]' derivation='Avg' name='[avg:age_first_birth:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[age_group]' derivation='Avg' name='[avg:age_group:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[age_menarche]' derivation='Avg' name='[avg:age_menarche:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[biophx]' derivation='Avg' name='[avg:biophx:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[bmi_group]' derivation='Avg' name='[avg:bmi_group:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[breast_cancer_history]' derivation='Avg' name='[avg:breast_cancer_history:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[covariate_count]' derivation='Avg' name='[avg:covariate_count:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[current_hrt]' derivation='Avg' name='[avg:current_hrt:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[family_history]' derivation='Avg' name='[avg:family_history:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[menopaus]' derivation='Avg' name='[avg:menopaus:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[race]' derivation='Avg' name='[avg:race:qk]' pivot='key' type='quantitative' />
+            <column caption='Biophx' datatype='integer' name='[biophx]' role='measure' type='quantitative' />
+            <column caption='Bmi Group' datatype='integer' name='[bmi_group]' role='measure' type='quantitative' />
+            <column caption='Breast Cancer History' datatype='integer' name='[breast_cancer_history]' role='measure' type='quantitative' />
+            <column caption='Covariate Count' datatype='integer' name='[covariate_count]' role='measure' type='quantitative' />
+            <column caption='Current Hrt' datatype='integer' name='[current_hrt]' role='measure' type='quantitative' />
+            <column caption='Family History' datatype='integer' name='[family_history]' role='measure' type='quantitative' />
+            <column caption='Menopaus' datatype='integer' name='[menopaus]' role='measure' type='quantitative' />
+            <column caption='Race' datatype='integer' name='[race]' role='measure' type='quantitative' />
+            <column-instance column='[race]' derivation='Sum' name='[sum:race:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:age_first_birth:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:age_group:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:age_menarche:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:BIRADS_breast_density:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:biophx:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:bmi_group:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:breast_cancer_history:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:covariate_count:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:current_hrt:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:family_history:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:menopaus:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:race:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:age_first_birth:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:age_group:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:age_menarche:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:BIRADS_breast_density:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:biophx:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:bmi_group:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:breast_cancer_history:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:covariate_count:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:current_hrt:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:family_history:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:menopaus:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0pl7vw00mxhhkc12pp68q0zabe41].[sum:race:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0pl7vw00mxhhkc12pp68q0zabe41].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' data-class='subtotal' scope='rows' value='#e799b3' />
+            <format attr='border-style' value='solid' />
+            <format attr='width' field='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[:Measure Names]' value='101' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#efebe8' />
+            <format attr='background-color' scope='rows' value='#efebe8' />
+            <format attr='color' data-class='subtotal' scope='rows' value='#e799b3' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' scope='rows' value='#e799b3' />
+            <format attr='color' field='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[:Measure Names]' value='#e799b3' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#f3ebf3' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0pl7vw00mxhhkc12pp68q0zabe41].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{C2CCF65F-BC13-4B9F-A495-E6CFBFE8B855}' />
+    </worksheet>
+    <worksheet name='Average by Race'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1'>Average by Race</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bcsc_risk_factors_summarized3_092020' name='federated.0pl7vw00mxhhkc12pp68q0zabe41' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pl7vw00mxhhkc12pp68q0zabe41'>
+            <column caption='BIRADS breast density' datatype='integer' name='[BIRADS_breast_density]' role='measure' type='quantitative' />
+            <column-instance column='[BIRADS_breast_density]' derivation='Avg' name='[avg:BIRADS_breast_density:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[bmi_group]' derivation='Avg' name='[avg:bmi_group:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[covariate_count]' derivation='Avg' name='[avg:covariate_count:qk]' pivot='key' type='quantitative' />
+            <column caption='Bmi Group' datatype='integer' name='[bmi_group]' role='measure' type='quantitative' />
+            <column caption='Covariate Count' datatype='integer' name='[covariate_count]' role='measure' type='quantitative' />
+            <column-instance column='[race]' derivation='None' name='[none:race:qk]' pivot='key' type='quantitative' />
+            <column caption='Race' datatype='integer' name='[race]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:BIRADS_breast_density:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <text column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:BIRADS_breast_density:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#d37295' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:bmi_group:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <text column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:bmi_group:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e799b3' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:covariate_count:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <text column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:covariate_count:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#fabfd2' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:BIRADS_breast_density:qk] + ([federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:bmi_group:qk] + [federated.0pl7vw00mxhhkc12pp68q0zabe41].[avg:covariate_count:qk]))</rows>
+        <cols>[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:race:qk]</cols>
+      </table>
+      <simple-id uuid='{7EB28A0A-7B85-4175-9212-30D8256003CC}' />
+    </worksheet>
+    <worksheet name='Bening/Malignant Count'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontsize='16'>Diagnosis Report</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bcsc_risk_factors_summarized3_092020' name='federated.0pl7vw00mxhhkc12pp68q0zabe41' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pl7vw00mxhhkc12pp68q0zabe41'>
+            <column-instance column='[diagnosis]' derivation='Count' name='[cnt:diagnosis:qk]' pivot='key' type='quantitative' />
+            <column caption='Diagnosis' datatype='string' name='[diagnosis]' role='dimension' type='nominal' />
+            <column-instance column='[diagnosis]' derivation='None' name='[none:diagnosis:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='border-color' value='#fabfd2' />
+            <format attr='border-style' value='solid' />
+            <format attr='background-color' value='#f5f0ef' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0pl7vw00mxhhkc12pp68q0zabe41].[cnt:diagnosis:qk]</rows>
+        <cols>[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]</cols>
+      </table>
+      <simple-id uuid='{6829CEF6-9533-4CAB-894C-4ED85BAE4AAD}' />
+    </worksheet>
+    <worksheet name='Concavity Mean'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bcsc_risk_factors_summarized3_092020' name='federated.0pl7vw00mxhhkc12pp68q0zabe41' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pl7vw00mxhhkc12pp68q0zabe41'>
+            <column caption='Concavity Mean (bin)' datatype='integer' name='[Concavity Mean (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='-2' formula='[concavity_mean]' peg='0' size='0.01' />
+            </column>
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Concavity Mean' datatype='real' name='[concavity_mean]' role='measure' type='quantitative' />
+            <column caption='Diagnosis' datatype='string' name='[diagnosis]' role='dimension' type='nominal' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Concavity Mean (bin)]' derivation='None' name='[none:Concavity Mean (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[diagnosis]' derivation='None' name='[none:diagnosis:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0pl7vw00mxhhkc12pp68q0zabe41].[cnt:id:qk]</rows>
+        <cols>[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:Concavity Mean (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.0pl7vw00mxhhkc12pp68q0zabe41].[Concavity Mean (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{20370433-0A47-4468-BE60-06FE4F8D84B0}' />
+    </worksheet>
+    <worksheet name='Mean Area'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bcsc_risk_factors_summarized3_092020' name='federated.0pl7vw00mxhhkc12pp68q0zabe41' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pl7vw00mxhhkc12pp68q0zabe41'>
+            <column caption='Area Mean' datatype='real' name='[area_mean]' role='measure' type='quantitative' />
+            <column caption='Area Se' datatype='real' name='[area_se]' role='measure' type='quantitative' />
+            <column caption='Diagnosis' datatype='string' name='[diagnosis]' role='dimension' type='nominal' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[diagnosis]' derivation='None' name='[none:diagnosis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[area_mean]' derivation='Sum' name='[sum:area_mean:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[area_se]' derivation='Sum' name='[sum:area_se:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]' />
+              <lod column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:id:ok]' />
+              <lod column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[sum:area_mean:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[sum:area_mean:qk]' z-order='1' />
+            <reference-line axis-column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[sum:area_se:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline1' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[sum:area_se:qk]' z-order='2' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[sum:area_mean:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]' />
+              <lod column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:id:ok]' />
+              <lod column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[sum:area_se:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]' />
+              <lod column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:id:ok]' />
+              <lod column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0pl7vw00mxhhkc12pp68q0zabe41].[sum:area_mean:qk] + [federated.0pl7vw00mxhhkc12pp68q0zabe41].[sum:area_se:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{4057987B-76EF-41CF-BE53-D6CF9A7CF562}' />
+    </worksheet>
+    <worksheet name='Mean Compactness'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bcsc_risk_factors_summarized3_092020' name='federated.0pl7vw00mxhhkc12pp68q0zabe41' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pl7vw00mxhhkc12pp68q0zabe41'>
+            <column caption='Compactness Mean' datatype='real' name='[compactness_mean]' role='measure' type='quantitative' />
+            <column caption='Compactness Se' datatype='real' name='[compactness_se]' role='measure' type='quantitative' />
+            <column caption='Diagnosis' datatype='string' name='[diagnosis]' role='dimension' type='nominal' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[diagnosis]' derivation='None' name='[none:diagnosis:nk]' pivot='key' type='nominal' />
+            <column-instance column='[id]' derivation='None' name='[none:id:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[compactness_mean]' derivation='Sum' name='[sum:compactness_mean:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[compactness_se]' derivation='Sum' name='[sum:compactness_se:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]' />
+              <size column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[sum:compactness_mean:qk]' />
+              <text column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]' />
+              <text column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:id:ok]' />
+              <lod column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[sum:compactness_se:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3EC777E1-3D94-4AC2-8726-E5DCA4619656}' />
+    </worksheet>
+    <worksheet name='Texture Mean'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bcsc_risk_factors_summarized3_092020' name='federated.0pl7vw00mxhhkc12pp68q0zabe41' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pl7vw00mxhhkc12pp68q0zabe41'>
+            <column caption='Texture Mean (bin)' datatype='integer' name='[Texture Mean (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[texture_mean]' peg='0' size='2' />
+            </column>
+            <column-instance column='[id]' derivation='Count' name='[cnt:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Diagnosis' datatype='string' name='[diagnosis]' role='dimension' type='nominal' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[Texture Mean (bin)]' derivation='None' name='[none:Texture Mean (bin):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[diagnosis]' derivation='None' name='[none:diagnosis:nk]' pivot='key' type='nominal' />
+            <column caption='Texture Mean' datatype='real' name='[texture_mean]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0pl7vw00mxhhkc12pp68q0zabe41].[cnt:id:qk]</rows>
+        <cols>[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:Texture Mean (bin):ok]</cols>
+        <show-full-range>
+          <column>[federated.0pl7vw00mxhhkc12pp68q0zabe41].[Texture Mean (bin)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{D4B874B9-37F6-420D-BD10-EDD6A4085BDC}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='About Breast Cancer and Data'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='text-align' id='dash-text_19' value='center' />
+          <format attr='vertical-align' id='dash-text_19' value='top' />
+        </style-rule>
+      </style>
+      <size maxheight='900' maxwidth='1600' minheight='900' minwidth='1600' preset-index='8' sizing-mode='fixed' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' forceUpdate='true' h='87000' id='5' is-centered='0' is-scaled='1' param='/Users/harrisonpreston/Google_Drive/Data_Analytics_Bootcamp/Module_20/BreastCancerClassification/resources/Picture1.png' w='29438' x='59313' y='1333' />
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='42333' id='18' is-centered='0' is-scaled='1' param='/Users/harrisonpreston/Google_Drive/Data_Analytics_Bootcamp/Module_20/BreastCancerClassification/resources/DYK-Breast-Cancer-Awareness-Month-flyer-678x381.jpg' w='43625' x='7813' y='11333' />
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='9889' id='19' w='58438' x='813' y='111'>
+          <formatted-text>
+            <run fontcolor='#e799b3' fontname='Brush Script MT' fontsize='48'>BREAST CANCER</run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='9556' id='20' is-centered='0' is-scaled='1' param='/Users/harrisonpreston/Google_Drive/Data_Analytics_Bootcamp/Module_20/BreastCancerClassification/resources/Breast-cancer-ribbon-e1539992286872-610x850.png' w='9375' x='7813' y='1000' />
+        <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' h='8667' id='21' is-centered='0' is-scaled='1' param='/Users/harrisonpreston/Google_Drive/Data_Analytics_Bootcamp/Module_20/BreastCancerClassification/resources/Breast-cancer-ribbon-e1539992286872-610x850.png' w='9000' x='46938' y='1111' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='25' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98222' id='24' param='vert' w='99000' x='500' y='889'>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' h='9889' id='19' w='58438' x='813' y='111'>
+                  <formatted-text>
+                    <run fontcolor='#e799b3' fontname='Brush Script MT' fontsize='48'>BREAST CANCER</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='86' h='9556' id='20' is-centered='0' is-fixed='true' is-scaled='1' param='/Users/harrisonpreston/Google_Drive/Data_Analytics_Bootcamp/Module_20/BreastCancerClassification/resources/Breast-cancer-ribbon-e1539992286872-610x850.png' w='9375' x='7813' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='78' h='8667' id='21' is-centered='0' is-fixed='true' is-scaled='1' param='/Users/harrisonpreston/Google_Drive/Data_Analytics_Bootcamp/Module_20/BreastCancerClassification/resources/Breast-cancer-ribbon-e1539992286872-610x850.png' w='9000' x='46938' y='1111'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' forceUpdate='true' h='87000' id='5' is-centered='0' is-fixed='true' is-scaled='1' param='/Users/harrisonpreston/Google_Drive/Data_Analytics_Bootcamp/Module_20/BreastCancerClassification/resources/Picture1.png' w='29438' x='59313' y='1333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='bitmap' _.fcp.SetMembershipControl.true...type-v2='bitmap' fixed-size='280' h='42333' id='18' is-centered='0' is-fixed='true' is-scaled='1' param='/Users/harrisonpreston/Google_Drive/Data_Analytics_Bootcamp/Module_20/BreastCancerClassification/resources/DYK-Breast-Cancer-Awareness-Month-flyer-678x381.jpg' w='43625' x='7813' y='11333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8D9B6A72-4133-4466-9A97-58E15CF74104}' />
+    </dashboard>
+    <dashboard name='Benign or Malignant'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='10' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='13' param='horz' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='160' h='98000' id='12' is-fixed='true' param='vert' w='98400' x='800' y='1000'>
+              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='8250' id='14' name='Mean Area' pane-specification-id='1' param='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]' w='98400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='89500' id='9' name='Mean Area' w='19200' x='7200' y='6500' />
+        <zone h='39875' id='15' name='Texture Mean' w='64200' x='30100' y='6500'>
+          <layout-cache minheight='184' type-h='scalable' type-w='fixed' />
+        </zone>
+        <zone h='43000' id='16' name='Mean Compactness' w='29600' x='28300' y='51375'>
+          <layout-cache type-h='fixed' type-w='fixed' />
+        </zone>
+        <zone h='43625' id='17' name='Concavity Mean' w='38200' x='59800' y='53375'>
+          <layout-cache minheight='193' type-h='scalable' type-w='fixed' />
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1250' minheight='1250' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='27' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='26' param='vert' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='89500' id='9' is-fixed='true' name='Mean Area' w='19200' x='7200' y='6500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='8250' id='14' name='Mean Area' pane-specification-id='1' param='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39875' id='15' is-fixed='true' name='Texture Mean' w='64200' x='30100' y='6500'>
+                  <layout-cache minheight='184' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43000' id='16' is-fixed='true' name='Mean Compactness' w='29600' x='28300' y='51375'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43625' id='17' is-fixed='true' name='Concavity Mean' w='38200' x='59800' y='53375'>
+                  <layout-cache minheight='193' type-h='scalable' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FE734F10-200E-4957-B1B8-090C67B31552}' />
+    </dashboard>
+    <dashboard name='Risk Factor Data'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone h='98000' id='3' name='Average Columns' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='79375' id='5' name='Age Group Averages' w='32400' x='1600' y='17375' />
+        <zone h='33250' id='6' name='Age Group Counts' w='61200' x='35800' y='62875' />
+        <zone h='44875' id='7' name='Average by Race' w='63700' x='34900' y='16750' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='23' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='22' param='vert' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Average Columns' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44875' id='7' is-fixed='true' name='Average by Race' w='63700' x='34900' y='16750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='79375' id='5' is-fixed='true' name='Age Group Averages' w='32400' x='1600' y='17375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='266' h='33250' id='6' is-fixed='true' name='Age Group Counts' w='61200' x='35800' y='62875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5E1A7F7E-DB24-4397-9643-62193EBA7DC4}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' name='About Breast Cancer and Data'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{D264D3BF-AFA7-4F1D-8ABB-250E85BA3A4D}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Risk Factor Data'>
+      <viewpoints>
+        <viewpoint name='Age Group Averages' />
+        <viewpoint name='Age Group Counts'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Average Columns'>
+          <zoom type='fit-width' />
+          <floating-toolbar-visibility value='1' />
+        </viewpoint>
+        <viewpoint name='Average by Race'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{ADA98C51-F488-4AFA-A66E-7B9E3BE48944}' />
+    </window>
+    <window class='dashboard' name='Benign or Malignant'>
+      <viewpoints>
+        <viewpoint name='Concavity Mean'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Mean Area'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Mean Compactness' />
+        <viewpoint name='Texture Mean'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='12' />
+      <simple-id uuid='{32250FA0-A0E0-47B4-9913-C39D68F10C80}' />
+    </window>
+    <window class='worksheet' name='Average Columns'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <floating-toolbar-visibility value='1' />
+      </viewpoint>
+      <simple-id uuid='{0EC4689E-8527-4D62-82E6-D3C25945D009}' />
+    </window>
+    <window class='worksheet' name='Age Group Averages'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C3C96E7B-7218-4695-BC53-A45D5874433C}' />
+    </window>
+    <window class='worksheet' name='Age Group Counts'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{03B44399-3002-4CBA-A6CE-3248B2833DC3}' />
+    </window>
+    <window class='worksheet' name='Average by Race'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BF5DC439-8B19-4E1F-8948-83D94C129018}' />
+    </window>
+    <window class='worksheet' name='Bening/Malignant Count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F0226075-00A6-49FF-9D49-4CC39AECD5A6}' />
+    </window>
+    <window class='worksheet' name='Mean Area'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B5FAE9F7-00B2-4748-BEA4-AED83DCC5B7A}' />
+    </window>
+    <window class='worksheet' name='Texture Mean'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{815ABA77-B4AD-4A21-A704-84D018D20420}' />
+    </window>
+    <window class='worksheet' name='Mean Compactness'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DD8239ED-970A-4D93-9029-019CF214C2B1}' />
+    </window>
+    <window class='worksheet' name='Concavity Mean'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0pl7vw00mxhhkc12pp68q0zabe41].[none:diagnosis:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{6793AE9E-B173-41F7-9AB1-11BFF832EA8A}' />
+    </window>
+  </windows>
+</workbook>
