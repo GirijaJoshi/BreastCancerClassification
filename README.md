@@ -60,13 +60,13 @@ Original data sets were divided in three different CVS tables; we performed vert
 
 ### Model Selection: ###
 
-Using the Breast Histopathology Images create a classification model using a Deep Neural Network to predict if tumor is benign or malign. A Convolutional Neural Netwoek, is the most effective tool found fo the task of image recognition; the model can efficiently process, correlate and unsderstan the large amount of data in high-resolution images.
+Using the Breast Histopathology Images create a classification model using a Deep Neural Network to predict if tumor is benign or malign. A Convolutional Neural Network, is the most effective tool found fo the task of image recognition; the model can efficiently process, correlate and understand the large amount of data in high-resolution images.
 
 ## Our Model ## 
 
-After image augmentation data set had too many images and could not be processed; the group decided to undersample. Used 109,404 images for training and 27,352 images for testing with similar numbers of cancerous and non-cancerous images.
+After image augmentation data set had too many images and could not be processed; the group decided to downsample. Used 109,404 images for training and 27,352 images for testing with similar numbers of cancerous and non-cancerous images.
 
-To increase accuray; model arquitecture is designed in a bottle neck; the Concolutional Neural Network will stablish a predictive model that classify the features of the image and can improve accuracy scores and F-scores.
+To increase accuracy; model architecture is designed in a bottle neck; the Convolutional Neural Network will stablish a predictive model that classify the features of the image and can improve accuracy scores and F-scores.
 The Deep Neural Network has three hidden layers with 32, 64 and 128 nodes respectively; totaling a number of 683,329 parameters. The initial precision score is 86% and accuracy (F-Score) 83%. All hidden layers are using relu activation functions and the output layer is using a sigmoid function.
 
 ### Feature Selection: ###
@@ -75,7 +75,7 @@ Using the Keras Preprocessing Image package; images are converted to arrays that
 
 * Image Size: Used original image size 50 x 50 pixels. The data was clean and with consistent format.
 
-* Image Type: Mammograms png are used to train the model in the 50 x 50 format. Same image format is needed to make predictions 
+* Image Type: Mammograms png are used to train the model in the 50 x 50 format. Same image format is needed to make predictions. 
 
 * Number of images: 136,756 images; there was an initial imbalance between cancerous and noncancerous images. We maximize the number of images by undersampling the non cancerous group to match number of images of the cancerous group.
 
@@ -88,6 +88,8 @@ Using the Keras Preprocessing Image package; images are converted to arrays that
 ## Dashboard Blueprint ## 
 
 The team will create a story board using Tableu to create a narrative on Breast Cancer Risk factorr and demographics. User can interact by clicking and to check which are the features that they want to observe and the division between cancerous and noncancerous. In the Tableus dashboard we will enbed an HTML file to run the ML model and do predictions of mammograms in real time. 
+
+Blueprint can be found in Google Slide Presentation
 
 
 ### Task Distribution & Technology Use ###
