@@ -85,6 +85,9 @@ Using the Keras Preprocessing Image package; images are converted to arrays that
 
 * Color: 3 color channels RGB (Red, Blue, Green).
 
+![Cancerous Images](https://github.com/GirijaJoshi/BreastCancerClassification/blob/tienl-patch-2/Images/Cancer_images.png)
+![Non Cancerous Images](https://github.com/GirijaJoshi/BreastCancerClassification/blob/tienl-patch-2/Images/non_cancer_images.png)
+
 ### Limitations: ###
 * Memory: To rin the model the server needs 10 GB of free memory 
 * Time: Model processing with under sampled data runs for 6 + hours on a personal computer
