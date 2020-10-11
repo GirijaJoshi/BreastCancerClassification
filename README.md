@@ -68,7 +68,7 @@ Using the Breast Histopathology Images create a classification model using a Dee
 
 After image augmentation data set had too many images and could not be processed; the group decided to downsample. Used 109,404 images for training and 27,352 images for testing with similar numbers of cancerous and non-cancerous images.
 
-![Image count after Downsampling](https://github.com/GirijaJoshi/BreastCancerClassification/blob/tienl-patch-2/num_img_after_downsampling%20(1).PNG)
+![Image count after Downsampling](https://github.com/GirijaJoshi/BreastCancerClassification/blob/tienl-patch-2/Images/non_cancer_images.png)
 
 To increase accuracy; model architecture is designed in a bottle neck; the Convolutional Neural Network will stablish a predictive model that classify the features of the image and can improve accuracy scores and F-scores.
 The Deep Neural Network has three hidden layers with 32, 64 and 128 nodes respectively; totaling a number of 683,329 parameters. The initial precision score is 86% and accuracy (F-Score) 83%. All hidden layers are using relu activation functions and the output layer is using a sigmoid function.
