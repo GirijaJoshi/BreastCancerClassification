@@ -51,6 +51,11 @@ CREATE TABLE indicators3 (
 	covariate_count VARCHAR NOT NULL
 );
 
+-- CREATE TABLE for image file names from kaggle
+-- File names loaded from jupyter notebook Database_Connections
+CREATE TABLE Kaggle_Images (
+	file_path_names VARCHAR(40) NOT NULL
+);
 
 --COPY indicators FROM '/Users/megue/Documents/Github/BreastCancerClassification/resources/bcsc_risk_factors_summarized1_092020.csv' DELIMITER ',' CSV HEADER;
 
@@ -62,3 +67,4 @@ DELIMITER ',' CSV HEADER;
 */
 
 SELECT * FROM indicators1;
+SELECT * FROM Kaggle_Images;
