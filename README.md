@@ -51,7 +51,7 @@ Starting with patient id (8975_idx5), then X and Y are the coordinates where the
 ### Breat Histopathology Images ###
 
 Extracted X, Y Patient ID and target feature from image path to create initial dataset. Cancer Diagnosis (1) group was disproportionately small (1→  78, 716 ; 2 → 198,259).
-![Data before Augmentation](https://github.com/GirijaJoshi/BreastCancerClassification/blob/tienl-patch-2/num_img_before_downsampling.PNG)
+![Data before Augmentation](https://github.com/GirijaJoshi/BreastCancerClassification/blob/master/Images/num_img_before_downsampling.PNG)
 To fix this we performed data augmentation by rotating images Cancer Diagnosis 40 degrees. New data has 208,984 cancer diagnosis and 198,259 no cancer diagnosis.
 
 ### Risk Factor Analysis ###
@@ -68,7 +68,7 @@ Using the Breast Histopathology Images create a classification model using a Dee
 
 After image augmentation data set had too many images and could not be processed; the group decided to downsample. Used 109,404 images for training and 27,352 images for testing with similar numbers of cancerous and non-cancerous images.
 
-![Image count after Downsampling](https://github.com/GirijaJoshi/BreastCancerClassification/blob/tienl-patch-2/Images/non_cancer_images.png)
+![Image count after Downsampling](https://github.com/GirijaJoshi/BreastCancerClassification/blob/master/Images/num_img_after_downsampling.PNG)
 
 To increase accuracy; model architecture is designed in a bottle neck; the Convolutional Neural Network will stablish a predictive model that classify the features of the image and can improve accuracy scores and F-scores.
 The Deep Neural Network has three hidden layers with 32, 64 and 128 nodes respectively; totaling a number of 683,329 parameters. The initial precision score is 86% and accuracy (F-Score) 83%. All hidden layers are using relu activation functions and the output layer is using a sigmoid function.
@@ -85,8 +85,8 @@ Using the Keras Preprocessing Image package; images are converted to arrays that
 
 * Color: 3 color channels RGB (Red, Blue, Green).
 
-![Cancerous Images](https://github.com/GirijaJoshi/BreastCancerClassification/blob/tienl-patch-2/Images/Cancer_images.png)
-![Non Cancerous Images](https://github.com/GirijaJoshi/BreastCancerClassification/blob/tienl-patch-2/Images/non_cancer_images.png)
+![Cancerous Images](https://github.com/GirijaJoshi/BreastCancerClassification/blob/master/Images/Cancer_images.png)
+![Non Cancerous Images](https://github.com/GirijaJoshi/BreastCancerClassification/blob/master/Images/non_cancer_images.png)
 
 ### Limitations: ###
 * Memory: To rin the model the server needs 10 GB of free memory 
