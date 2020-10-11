@@ -113,7 +113,7 @@ Blueprint can be found in Google Slide Presentation
 - [ ] Execute blueprints of dashboards in HTML and Tableau
 
 ## Presentation Link ##
-[Link](https://docs.google.com/presentation/d/1gjYlYHoC6UKUpj6zE0XUGuknyy2YOyjtKmNX8WKn3Xw/edit?usp=sharing)
+[Google Slides Storyboard Link](https://docs.google.com/presentation/d/1gjYlYHoC6UKUpj6zE0XUGuknyy2YOyjtKmNX8WKn3Xw/edit?usp=sharing)
 ## Communication and More Information ##
 
 We are currently communicating through a Slack channel (name: #finalproject); and have created a Google Drive Folder to store presentation templetes and meeting minutes.
