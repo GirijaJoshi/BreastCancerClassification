@@ -24,15 +24,43 @@
       According to the American Cancer Society, early detection of Breast Cancer, the 5-year relative survival rate is 99%. </br></br>
       Mammograms is an x-ray that allows qualified specialists to examine breast tissue for any suspicious areas; by training computers with high sensitivity the cost of mammograms can decrease as it will advice you to go to the doctor if there is a suspicious of a malignant mass.
     </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title">Breast Cancer Risk Factors Studied</h3>
+
+    <div class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title">Breast Cancer Risk Factors Studied</h3>
+      </div>
+
+        <div class="panel-body">
+          <div class="col-md-12 text-center">
+            <div id="myChart"></div>
           </div>
-          <div id="sample-metadata"  class="panel-body">
-              <div id="myChart"></div>
+          <div class="col-md-6 text-center">
+            <div id="graph1"> </div>1111111
+          </div>
+          <div class="col-md-6 text-center">
+            <div id="graph2"> </div> 2222222
+          </div>
+          <div class="col-md-6 text-center">
+            <div id="graph1"> </div>33333333
+          </div>
+          <div class="col-md-6 text-center">
+            <div id="graph2"> </div> 44444444
           </div>
         </div>
+    </div>
 
+    <div class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title">AI Image Predictor</h3>
+      </div>
+      <div id="sample-metadata"  class="panel-body">
+        The images are preloaded here for demo purposes, in the future we will provide integration to allow ingest of user provided images in batches (via API and GUI)
+        <br>
+        <br>
+        Select one of the images, AI will be run in real time with latest model to predict if cancer risk is present.
+        <div id="...."></div>
+      </div>
+    </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="index.js"></script>
