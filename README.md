@@ -98,6 +98,13 @@ The team will create a story board using Tableu to create a narrative on Breast 
 
 Blueprint can be found in Google Slide Presentation
 
+## Technologies, Languages, Tools and Algorithms ##
+
+The technologies used for the project are Heroku, Tableau, and Github. Heroku is being used to host the Machine Learning model and make life predictions on real mammograms. Tableau is used to create a story and dashboards showing graphs on all our datasets. Finally Github has been central for the group project nad will be used to host final webpage. 
+
+The code uses of python, HTML, Javascript and SQL. Different langiuages are used for different tasks; machine learning model and Initial data exploration is coded in python; SQL was used to code database; and, Javascript and HTML for the webpage application. 
+
+Algorithms were used for the machine learning models which uses depp learning neural network, CNN and a Random Forest Classifier.
 
 ### Task Distribution & Technology Use ###
 
