@@ -15,13 +15,13 @@
         }
 
         tr > * + * {
-            padding-left: 10em;
+            padding-left: 0.5em;
         }
     </style>
     
 </head>
 <body>
-    <center><h2>Images</h2></center>
+    <center><h2>Breast Cancer Classification Test Images</h2></center>
     <div class="row" id="imgs">
         <form action="/action_page.php">
             <table class="center">
@@ -34,26 +34,33 @@
                 </tr>
                 
                 <tr>
-                    <td><img src="{{url_for('download_file', filename='8863_idx5_x351_y601_class0.png') }}" alt="Image1"></td>
-                    <td><img src="{{url_for('download_file', filename='10254_idx5_x1651_y1001_class1.png') }}" alt="Image2"></td>
-                    <td><img src="{{url_for('download_file', filename='16570_idx5_x1451_y951_class1.png') }}" alt="Image3"></td>
-                    <td><img src="{{url_for('download_file', filename='8955_idx5_x51_y301_class0.png') }}" alt="Image4"></td>
-                    <td><img src="{{url_for('download_file', filename='10279_idx5_x301_y851_class1.png') }}" alt="Image5"></td>
+                    <td>
+                        <a href="/predict/8863_idx5_x351_y601_class0.png">
+                            <img src="{{url_for('download_file', filename='8863_idx5_x351_y601_class0.png') }}" alt="Image1">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="/predict/10254_idx5_x1651_y1001_class1.png">
+                            <img src="{{url_for('download_file', filename='10254_idx5_x1651_y1001_class1.png') }}" alt="Image2">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="/predict/16570_idx5_x1451_y951_class1.png">
+                            <img src="{{url_for('download_file', filename='16570_idx5_x1451_y951_class1.png') }}" alt="Image3">
+                        </a>
+                    </td>                        
+                        
+                    <td>
+                        <a href="/predict/8955_idx5_x51_y301_class0.png">
+                            <img src="{{url_for('download_file', filename='8955_idx5_x51_y301_class0.png') }}" alt="Image4">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="/predict/10279_idx5_x301_y851_class1.png">
+                            <img src="{{url_for('download_file', filename='10279_idx5_x301_y851_class1.png') }}" alt="Image5">
+                        </a>
+                    </td>                    
                 </tr>
-    
-                <tr>
-                    <td><a class="btn" href="/predict/8863_idx5_x351_y601_class0.png"
-                        role="button">Predict Image 1</a></td>
-                    <td><a class="btn" href="/predict/10254_idx5_x1651_y1001_class1.png"
-                        role="button">Predict Image 2</a></td>
-                    <td><a class="btn" href="/predict/16570_idx5_x1451_y951_class1.png"
-                        role="button">Predict Image 3</a></td>
-                    <td><a class="btn" href="/predict/8955_idx5_x51_y301_class0.png"
-                        role="button">Predict Image 4</a></td>
-                    <td><a class="btn" href="/predict/10279_idx5_x301_y851_class1.png"
-                        role="button">Predict Image 5</a></td>
-                </tr>
-            -
             </table>
     </div>
 </body>

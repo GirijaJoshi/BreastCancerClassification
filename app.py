@@ -35,7 +35,11 @@ def prediction(img_name):
     # performing prediction
     classes = loaded_model.predict_classes(images, batch_size=10)
     if int(classes[0][0]) == 1:
-        prediction =  { "prediction image ": "Malignant "}
+        # prediction =  { "prediction image ": "Malignant "}
+        pred = "Malignant"
+        return render_template('image_prediction.html', pred=pred)
     else:
-        prediction =  { "prediction image ": "Benign "}
+        pred = "Benign"
+        return render_template('image_prediction.html', pred=pred)
+        # prediction =  { "prediction image ": "Benign "}
     return prediction
