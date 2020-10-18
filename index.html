@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Breast Cancer Study</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+  <script src="https://cdn.zingchart.com/zingchart.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="col-md-12 jumbotron text-center">
+        <h1>Beat Breast Cancer</h1>
+  <!--      <p>Team BCS</p> !-->
+    </div>
+  </div>
+    <div class="well"> Breast cancer is the most common cancer in women worldwide; it is estimated that 276,480 new cases of invasive breast cancer will be diagnosed in women in the US. Approximately 30% of all new diagnosis will be breast cancer </br> </br>
+      Other statistics reveal that 1 in 8 women will be diagnosed through their lifetime. </br></br>
+      According to the American Cancer Society, early detection of Breast Cancer, the 5-year relative survival rate is 99%. </br></br>
+      Mammograms is an x-ray that allows qualified specialists to examine breast tissue for any suspicious areas; by training computers with high sensitivity the cost of mammograms can decrease as it will advice you to go to the doctor if there is a suspicious of a malignant mass.
+    </div>
+
+    <div class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title">Breast Cancer Risk Factors Studied</h3>
+      </div>
+
+        <div class="panel-body">
+          <div class="col-md-12 text-center">
+            <div id="myChart"></div>
+          </div>
+
+          <div class="col-md-5 text-center">
+            <div id="graph1"></div>
+            <img
+             src="./images/Age.png"
+             class="img-responsive"
+             alt="Responsive image"
+             />
+          </div>
+          <div class="col-md-6 text-center">
+            <div id="graph2"></div>
+            <img
+             src="./images/Years.png"
+             class="img-responsive"
+             alt="Responsive image"
+             />
+          </div>
+
+          <div class="col-md-6 text-center">
+            <div id="graph4"></div>
+            <img
+             src="./images/Horm.png"
+             class="img-responsive"
+             alt="Responsive image"
+             />
+          </div>
+          <div class="col-md-6 text-center">
+            <div id="graph3"></div>
+            <img
+             src="./images/RaceHis.png"
+             class="img-responsive"
+             alt="Responsive image"
+             />
+          </div>
+
+        </div>
+         Data were obtained from the Breast Cancer Surveillance Consortium, funded by the National Cancer Institute (HHSN261201100031C). http://www.bcsc-research.org/.
+    </div>
+
+    <div class="panel panel-danger">
+      <div class="panel-heading">
+        <h3 class="panel-title">AI Image Predictor</h3>
+      </div>
+      <div id="sample-metadata"  class="panel-body">
+        The images are preloaded here for demo purposes, in the future we will provide integration to allow ingest of user provided images in batches (via API and GUI)
+        <br>
+        <br>
+        Select one of the images, AI will be run in real time with latest model to predict if cancer risk is present.
+        <br>
+        <div class="col-md-2 text-center">
+          <div id="ai1"> <a href="/predict/8863_idx5_x351_y601_class0.png">
+           <img
+            src="./images/8863_idx5_x351_y601_class0.png"
+            class="img-responsive"
+            alt="Responsive image"
+            />
+          </div>
+        </div>
+        <div class="col-md-2 text-center">
+          <div id="ai2"> <a href="/predict/8955_idx5_x51_y301_class0.png">
+             <img
+              src="./images/8955_idx5_x51_y301_class0.png"
+              class="img-responsive"
+              alt="Responsive image"
+              />
+          </div>
+        </div>
+        <div class="col-md-2 text-center">
+          <div id="ai3"> <a href="/predict/10254_idx5_x1651_y1001_class1.png">
+             <img
+              src="./images/10254_idx5_x1651_y1001_class1.png"
+              class="img-responsive"'f.g././b./ltklrk;
+              alt="Responsive image"
+              />
+          </div>
+        </div>
+        <div class="col-md-2 text-center">
+          <div id="ai4"> <a href="/predict/10279_idx5_x301_y851_class1.png">
+             <img
+              src="./images/10279_idx5_x301_y851_class1.png"
+              class="img-responsive"
+              alt="Responsive image"
+              />
+          </div>
+        </div>
+        <div class="col-md-2 text-center">
+          <div id="ai4"> <a href="/predict/16570_idx5_x1451_y951_class1.png">
+             <img
+              src="./images/16570_idx5_x1451_y951_class1.png"
+              class="img-responsive"
+              alt="Responsive image"
+              />
+          </div>
+        </div>
+        <br>
+
+      <!-- code here for result and additional text !-->
+
+      </div>
+    </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="./static/js/index.js"></script>
+
+
+</body>
+
+</html>
