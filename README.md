@@ -16,6 +16,13 @@ According to the American Cancer Society, early detection (Stage 1) has a 5-year
 
 ## Data Source ##
 
+### Breast Cancer Wisconsin (Diagnostic) ###
+
+Source:
+[data.csv](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+%28Diagnostic%29)
+
+The data set contains 569 instances; features come from a digitalized image of a fine needle aspiration (FNA) of breast mass. They provide a description of the characteristic of the cell nuclei present in the image. There are 14 feature including ID number and mass diagnosis (malignant or bening).This data set will help us better understand IDC mammogram images.
+
 ### Risk Factor Dataset ###
 
 Source:
@@ -106,21 +113,34 @@ The code uses of python, HTML, Javascript and SQL. Different langiuages are used
 
 Algorithms were used for the machine learning models which uses depp learning neural network, CNN and a Random Forest Classifier.
 
-### Task Distribution & Technology Use ###
+## Results of the analysis ##
+### Risk Factor Analysis ###
+Risk factor visualizations and simple machine learning model show that major risk factors are related to natural femenine hormonal changes and menstrual cycles. Some other important contributors for the development of breast cancer are related to familial disease history; and, age. 
 
-* Presentation - Ana (Readme.md) & all team members will participate in feature selection analysis and decision making process
-* Data Processing and Modeling- Girija
-* Database -  Mauricio
-* Dashboard- Tien & Ana (HTML), Hannah (Tableau)
+### Breast Histopathology Images ###
+Convolutional Neural Network and Image processing of 136,756 mammogram images we achieved an accuracy score of 83% with balanced accuracy for positive and negative predictions. Other studies using the same data have only achieved 76% accuracy. We have attached the summary statistics of machine learning model.
 
-## Upcoming tasks ##
-- [ ] Assess sensitivity and optimize model to desired level of accuracy
-- [ ] Flask application for machine learning model
-- [ ] Static database and scraping interactions with existing code
-- [ ] Execute blueprints of dashboards in HTML and Tableau
-
+## Risk factor analysis ##
 ## Presentation Link ##
 [Google Slides Storyboard Link](https://docs.google.com/presentation/d/1gjYlYHoC6UKUpj6zE0XUGuknyy2YOyjtKmNX8WKn3Xw/edit?usp=sharing)
+
+## Dashboards ##
+
+### Tableau ### 
+[Presentation Dashboard](https://public.tableau.com/profile/hannah1209#!/vizhome/BreastCancerClassification_Tableau/TitleSlide?publish=yes)
+
+### HTML ###
+
+[Beat Breast Cancer](https://github.com/GirijaJoshi/BreastCancerClassification/tree/Tien-HTML1)
+
+## Recommendation for future analysis ## 
+
+* Risk Factor Dataset can be changed for a more general dataset that includes women and men. It would be ideal to conduct an analysis of a longitudinal data set to closely observe the transformation of some of the features and how they may lead to cancer diagnosis. 
+
+* CNN Machine Learning Model should have a greater positive predictive accuracy score. Because this has a medical application, we should aspite to have above 98% 99% accuracy for TRUE POTIVES. Model optimization can be done through better feature selection, increasing training and testing images, and/or adding more hidden layers to the model architecture. We plan to keep improving the model. 
+
+* Web app can be used as a screening tool at medical center to direct patients to specialist. We need to adapt the code to allow users to upload mammograms.
+
 ## Communication and More Information ##
 
 We are currently communicating through a Slack channel (name: #finalproject); and have created a Google Drive Folder to store presentation templetes and meeting minutes.
