@@ -120,7 +120,7 @@ Risk factor visualizations and simple machine learning model show that major ris
 ### Breast Histopathology Images ###
 Convolutional Neural Network and Image processing of 136,756 mammogram images we achieved an accuracy score of 83% with balanced accuracy for positive and negative predictions. Other studies using the same data have only achieved 76% accuracy. We have attached the summary statistics of machine learning model.
 
-## Risk factor analysis ##
+
 ## Presentation Link ##
 [Google Slides Storyboard Link](https://docs.google.com/presentation/d/1gjYlYHoC6UKUpj6zE0XUGuknyy2YOyjtKmNX8WKn3Xw/edit?usp=sharing)
 
