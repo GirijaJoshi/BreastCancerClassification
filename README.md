@@ -77,7 +77,8 @@ After image augmentation data set had too many images and could not be processed
 
 ![Image count after Downsampling](https://github.com/GirijaJoshi/BreastCancerClassification/blob/master/Images/num_img_after_downsampling.PNG)
 
-To increase accuracy; model architecture is designed in a bottle neck; the Convolutional Neural Network will stablish a predictive model that classify the features of the image and can improve accuracy scores and F-scores.
+To increase accuracy; model architecture is designed in a bottle neck. The Convolutional Neural Network will stablish a predictive model that classify the features of the image and can improve accuracy scores and F-scores. Training and testing groups were 80% and 20% of dataset.
+
 The Deep Neural Network has three hidden layers with 32, 64 and 128 nodes respectively; totaling a number of 683,329 parameters. The initial precision score is 86% and accuracy (F-Score) 83%. All hidden layers are using relu activation functions and the output layer is using a sigmoid function.
 
 ### Feature Selection: ###
@@ -131,7 +132,7 @@ Convolutional Neural Network and Image processing of 136,756 mammogram images we
 
 ### HTML ###
 
-[Beat Breast Cancer](https://github.com/GirijaJoshi/BreastCancerClassification/tree/Tien-HTML1)
+[Beat Breast Cancer](https://hkyopreston.github.io/)
 
 ## Recommendation for future analysis ## 
 
