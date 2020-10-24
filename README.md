@@ -96,7 +96,7 @@ Using the Keras Preprocessing Image package; images are converted to arrays that
 ![Non Cancerous Images](https://github.com/GirijaJoshi/BreastCancerClassification/blob/master/Images/non_cancer_images.png)
 
 ### Limitations: ###
-* Memory: To rin the model the server needs 10 GB of free memory 
+* Memory: To run the model the server needs 10 GB of free memory 
 * Time: Model processing with under sampled data runs for 6 + hours on a personal computer
 
 ## Dashboard Blueprint ## 
